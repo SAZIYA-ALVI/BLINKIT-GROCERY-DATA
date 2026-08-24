@@ -1,217 +1,231 @@
-# 🛒 Blinkit Grocery Sales Analysis Dashboard
+# 🛒 Blinkit Grocery Data Analysis & Power BI Dashboard
 
-## 📊 Project Overview
+![Blinkit Dashboard](DASHBORD.png)
 
-This project presents an **interactive Blinkit Grocery Sales Analysis Dashboard** built using **Microsoft Power BI**.
+## 📌 Project Overview
 
-The dashboard analyzes grocery sales performance across different **outlet types, outlet sizes, outlet locations, item types, fat content, ratings, and establishment years**.
+This project analyzes **Blinkit grocery sales data** to identify important sales trends, customer preferences, outlet performance, and product-level insights.
 
-The main objective is to transform raw grocery sales data into meaningful business insights through interactive visualizations and KPIs.
+The project uses **Microsoft Power BI and Excel** to clean, transform, analyze, and visualize the data through an interactive dashboard.
 
----
-## 🎯 Objectives
-
-* Analyze overall grocery sales performance
-* Identify top-performing outlet types and locations
-* Compare sales based on outlet size
-* Analyze sales by item type
-* Compare Low Fat and Regular products
-* Understand outlet establishment trends
-* Track average sales, number of items, and customer ratings
-* Create an interactive and user-friendly business dashboard
+The goal is to convert raw grocery sales data into meaningful business insights that can help understand **sales performance, outlet characteristics, product categories, and customer ratings**.
 
 ---
 
-## 📌 Key KPIs
+## 🎯 Business Objectives
 
-| KPI                 |       Value |
-| ------------------- | ----------: |
-| 💰 Total Sales      |     **$1M** |
-| 📈 Average Sales    | **120.17K** |
-| 🛍️ Number of Items |      **9K** |
-| ⭐ Average Rating    |     **4.0** |
+The main objectives of this project are:
 
----
-
-## 📈 Dashboard Features
-
-### 1. Outlet Establishment Analysis
-
-Shows how outlet sales have changed based on the **outlet establishment year**.
-
-### 2. Outlet Size Analysis
-
-Compares sales contribution from:
-
-* Small
-* Medium
-* High
-
-### 3. Outlet Location Analysis
-
-Analyzes sales across:
-
-* Tier 1
-* Tier 2
-* Tier 3
-
-### 4. Item Type Analysis
-
-Displays sales performance across different grocery categories such as:
-
-* Fruits & Vegetables
-* Snack Foods
-* Household
-* Frozen Foods
-* Dairy
-* Canned
-* Baking Goods
-* Health & Hygiene
-* Meat
-* Soft Drinks
-* Others
-
-### 5. Fat Content Analysis
-
-Compares sales between:
-
-* Low Fat
-* Regular
-
-### 6. Outlet Type Performance
-
-Compares:
-
-* Supermarket Type 1
-* Grocery Store
-* Supermarket Type 2
-* Supermarket Type 3
-
-The comparison includes **Total Sales, Number of Items, Average Sales, Item Visibility, and Average Rating**.
-
----
-
-## 🎛️ Interactive Filters
-
-The dashboard includes interactive filters for:
-
-* **Outlet Location Type**
-* **Outlet Size**
-* **Item Type**
-
-These filters allow users to dynamically explore different segments of the grocery business.
+* Analyze overall grocery sales performance.
+* Identify the highest-performing product categories.
+* Compare sales across different outlet types.
+* Analyze outlet location and size.
+* Understand the impact of product visibility and ratings.
+* Identify trends in outlet establishment.
+* Analyze the relationship between product categories and sales.
+* Build an interactive Power BI dashboard for business reporting.
 
 ---
 
 ## 🛠️ Tools & Technologies
 
-* **Microsoft Power BI**
-* **Power Query**
-* **DAX**
-* **Data Cleaning & Transformation**
-* **Data Visualization**
-* **Data Analysis**
-* **KPI & Dashboard Design**
+| Tool                  | Purpose                                 |
+| --------------------- | --------------------------------------- |
+| 🟢 Microsoft Excel    | Data source and initial data inspection |
+| 🔵 Power BI           | Dashboard creation and visualization    |
+| 🟣 Power Query        | Data cleaning and transformation        |
+| 🟠 DAX                | Measures and calculations               |
+| 📊 Data Visualization | Business insights and reporting         |
 
 ---
 
-## 🔄 Project Workflow
+## 📂 Dataset
 
-```text
-Raw Dataset
-     ↓
-Data Import
-     ↓
-Data Cleaning & Transformation
-     ↓
-Data Modeling
-     ↓
-DAX Measures / Calculations
-     ↓
-Interactive Visualizations
-     ↓
-Power BI Dashboard
-     ↓
-Business Insights
-```
+The dataset contains information related to Blinkit grocery products and outlets.
 
----
+### Important Columns
 
-## 💡 Key Insights
-
-Based on the dashboard:
-
-* **Supermarket Type 1** contributes the highest overall sales among the outlet types shown.
-* **Tier 3 outlets** generate the highest sales compared with Tier 1 and Tier 2 locations.
-* **Medium-sized outlets** contribute a significant share of overall sales.
-* **Low Fat products** generate higher sales than Regular products in the displayed analysis.
-* **Fruits & Vegetables and Snack Foods** are among the strongest-performing item categories.
-* The average customer rating is approximately **4.0**, indicating a strong overall rating performance.
+* `Item Identifier`
+* `Item Weight`
+* `Item Fat Content`
+* `Item Visibility`
+* `Item Type`
+* `Item MRP`
+* `Outlet Identifier`
+* `Outlet Establishment Year`
+* `Outlet Size`
+* `Outlet Location Type`
+* `Outlet Type`
+* `Item Outlet Sales`
+* `Rating`
 
 ---
 
-## 📂 Project Structure
+## 🧹 Data Cleaning & Transformation
 
-```text
-Blinkit-Grocery-Sales-Analysis/
-│
-├── images/
-│   └── blinkit-dashboard.png
-│
-├── Blinkit Grocery Data.xlsx
-│
-├── Blinkit Dashboard.pbix
-│
-└── README.md
-```
+The data was prepared using **Power Query** before creating the dashboard.
 
-> Replace the file names above with the actual names of the files you upload to your repository.
+The main data-cleaning steps included:
+
+* Removing unnecessary columns.
+* Handling missing values.
+* Checking duplicate records.
+* Correcting data types.
+* Standardizing categorical values.
+* Cleaning inconsistent values in `Item Fat Content`.
+* Creating required calculated fields.
+* Preparing the dataset for Power BI analysis.
 
 ---
 
-## 🚀 How to Use
+## 📊 Dashboard KPIs
 
-1. Download or clone this repository.
-2. Open the `.pbix` file using **Microsoft Power BI Desktop**.
-3. Refresh the dataset if required.
-4. Use the dashboard filters to explore the data.
-5. Interact with the charts and KPIs to analyze sales performance.
+The dashboard provides important Key Performance Indicators (KPIs), including:
+
+| KPI                | Description              |
+| ------------------ | ------------------------ |
+| 💰 Total Sales     | Overall sales generated  |
+| 📦 Number of Items | Total number of products |
+| ⭐ Average Rating   | Average customer rating  |
+| 💵 Average Sales   | Average sales per item   |
+
+> **Note:** KPI values shown in the dashboard should be taken directly from the Power BI report to avoid displaying incorrect or outdated values.
+
+---
+
+## 📈 Dashboard Features
+
+The Power BI dashboard provides insights into:
+
+### 1. Total Sales Analysis
+
+Analyzes the overall sales generated across products and outlets.
+
+### 2. Item Type Analysis
+
+Shows sales performance across different grocery product categories.
+
+### 3. Fat Content Analysis
+
+Compares sales based on the fat-content classification of products.
+
+### 4. Outlet Analysis
+
+Analyzes sales according to:
+
+* Outlet Type
+* Outlet Size
+* Outlet Location
+* Outlet Establishment Year
+
+### 5. Product Visibility
+
+Analyzes the relationship between product visibility and sales performance.
+
+### 6. Customer Rating
+
+Analyzes product ratings and their relationship with sales.
 
 ---
 
 ## 📷 Dashboard Preview
 
-The dashboard provides a single-page view of Blinkit's grocery sales performance with:
+The dashboard provides a single-page interactive view of Blinkit's grocery sales performance.
 
-* KPI Cards
-* Line/Area Chart
-* Donut Charts
-* Bar Charts
-* Comparison Tables
-* Interactive Slicers
+![Blinkit Power BI Dashboard](DASHBORD.png)
 
 ---
 
-## 🎓 Skills Demonstrated
+## 🎥 Dashboard Demo
 
-This project demonstrates practical skills in:
+A dashboard demonstration video is also included in this repository.
 
-**Data Analytics | Power BI | Power Query | DAX | Data Cleaning | Data Visualization | KPI Analysis | Business Intelligence**
-
----
-
-## 📌 Project Purpose
-
-This project was created as a **Data Analytics portfolio project** to demonstrate the ability to clean, analyze, visualize, and communicate insights from a real-world grocery sales dataset.
+**File:** `blinkit.mp4`
 
 ---
 
-## 👩‍💻 Author
+## 📁 Project Structure
 
-**Saziya**
+```text
+BLINKIT-GROCERY-DATA/
+│
+├── BlinkIT Grocery Data Excel.xlsx
+├── DASHBORD.png
+├── blinkit.mp4
+└── README.md
+```
 
-Aspiring Data Analyst | Power BI | SQL | Python | Excel | Data Analytics & Machine Learning
+> If the Power BI `.pbix` file is uploaded later, it can be added to the project structure as well.
 
 ---
 
-⭐ If you found this project useful, consider giving the repository a star!
+## 💡 Key Business Insights
+
+The analysis can help answer questions such as:
+
+* Which product categories generate the highest sales?
+* Which outlet type performs best?
+* Which outlet location generates more revenue?
+* Does outlet size affect sales?
+* Which products have higher customer ratings?
+* How does product visibility affect sales?
+* How have sales changed based on outlet establishment year?
+* Which fat-content category contributes more to revenue?
+
+---
+
+## 🚀 Project Workflow
+
+```text
+Raw Excel Data
+      ↓
+Data Cleaning
+      ↓
+Power Query
+      ↓
+Data Transformation
+      ↓
+Data Modeling
+      ↓
+DAX Measures
+      ↓
+Power BI Visualizations
+      ↓
+Interactive Dashboard
+      ↓
+Business Insights
+```
+
+---
+
+## 📚 Skills Demonstrated
+
+Through this project, I demonstrated skills in:
+
+* Data Cleaning
+* Data Transformation
+* Data Visualization
+* Power BI
+* Power Query
+* DAX
+* KPI Development
+* Business Intelligence
+* Exploratory Data Analysis
+* Dashboard Design
+* Business Insights
+
+---
+
+## 👩‍💻 About Me
+
+**Saziya Alvi**
+
+Aspiring **Data Analyst** with an interest in Data Analytics, Machine Learning, SQL, Python, Excel, and Power BI.
+
+This project is part of my data analytics portfolio and demonstrates my ability to transform raw data into meaningful business insights using data visualization and business intelligence tools.
+
+---
+
+## ⭐ If you found this project useful
+
+If you like this project, feel free to ⭐ **star the repository** and explore the dashboard.
