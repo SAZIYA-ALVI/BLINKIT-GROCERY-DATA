@@ -1,7 +1,5 @@
 # 🛒 Blinkit Grocery Sales Analysis Dashboard
 
-![Blinkit Dashboard](images/blinkit-dashboard.png)
-
 ## 📊 Project Overview
 
 This project presents an **interactive Blinkit Grocery Sales Analysis Dashboard** built using **Microsoft Power BI**.
@@ -11,7 +9,6 @@ The dashboard analyzes grocery sales performance across different **outlet types
 The main objective is to transform raw grocery sales data into meaningful business insights through interactive visualizations and KPIs.
 
 ---
-
 ## 🎯 Objectives
 
 * Analyze overall grocery sales performance
